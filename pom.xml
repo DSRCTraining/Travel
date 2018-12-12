@@ -1,0 +1,143 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.dsrc</groupId>
+  <artifactId>TravelAgency</artifactId>
+  <packaging>jar</packaging>
+  <version>1.0-SNAPSHOT</version>
+  <name>TravelAgency</name>
+  <url>http://maven.apache.org</url>
+   <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
+   <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.12</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+  <build>
+     <plugins>
+         <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-antrun-plugin</artifactId>
+            <version>1.1</version>
+            <executions>
+               <execution>
+                  <id>id.pre-clean</id>
+                  <phase>pre-clean</phase>
+                  <goals>
+                     <goal>run</goal>
+                  </goals>
+                  <configuration>
+                     <tasks>
+                        <echo>pre-clean phase</echo>
+                     </tasks>
+                  </configuration>
+               </execution>
+            
+               <execution>
+                  <id>id.clean</id>
+                  <phase>clean</phase>
+                  <goals>
+                     <goal>run</goal>
+                  </goals>
+                  <configuration>
+                     <tasks>
+                        <echo>clean phase</echo>
+                     </tasks>
+                  </configuration>
+               </execution>
+            
+               <execution>
+                  <id>id.post-clean</id>
+                  <phase>post-clean</phase>
+                  <goals>
+                     <goal>run</goal>
+                  </goals>
+                  <configuration>
+                     <tasks>
+                        <echo>post-clean phase</echo>
+                     </tasks>
+                  </configuration>
+               </execution>
+            <!--      <execution>
+                  <id>id.validate</id>
+                  <phase>validate</phase>
+                  <goals>
+                     <goal>run</goal>
+                  </goals>
+                  <configuration>
+                     <tasks>
+                        <echo>validate phase</echo>
+                     </tasks>
+                  </configuration>
+               </execution>
+            
+               <execution>
+                  <id>id.compile</id>
+                  <phase>compile</phase>
+                  <goals>
+                     <goal>run</goal>
+                  </goals>
+                  <configuration>
+                     <tasks>
+                        <echo>compile phase</echo>
+                     </tasks>
+                  </configuration>
+               </execution>
+            
+               <execution>
+                  <id>id.test</id>
+                  <phase>test</phase>
+                  <goals>
+                     <goal>run</goal>
+                  </goals>
+                  <configuration>
+                     <tasks>
+                        <echo>test phase</echo>
+                     </tasks>
+                  </configuration>
+               </execution>
+            
+               <execution>
+                  <id>id.package</id>
+                  <phase>package</phase>
+                  <goals>
+                     <goal>run</goal>
+                  </goals>
+                  <configuration>
+                     <tasks>
+                        <echo>package phase</echo>
+                     </tasks>
+                  </configuration>
+               </execution>
+            
+               <execution>
+                  <id>id.deploy</id>
+                  <phase>deploy</phase>
+                  <goals>
+                     <goal>run</goal>
+                  </goals>
+                  <configuration>
+                     <tasks>
+                        <echo>deploy phase</echo>
+                     </tasks>
+                  </configuration>
+               </execution> -->
+               <execution>
+                        <phase>test</phase>
+                        <goals>
+                           <goal>run</goal>
+                        </goals>
+                        </execution>
+            </executions>
+         </plugin>
+      </plugins>
+  </build>
+ 
+</project>
