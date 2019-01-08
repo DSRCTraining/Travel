@@ -1,0 +1,4 @@
+FROM openjdk:8
+COPY C:\GitWorks\TravelAgency\src\main\java\com\dsrc\ \tmp
+WORKDIR \tmp
+ENTRYPOINT ["java","App"]
